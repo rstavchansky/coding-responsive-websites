@@ -99,6 +99,7 @@ header nav ul li a{
 
 .main-image {
 	height: auto;
+	width: 95%;
 }
 .main-image img {
 	width: 100%;
@@ -180,4 +181,53 @@ footer span {
 	text-transform: lowercase;
 	color: #77a466;
 	font-size: 0.875em;
+}
+
+
+@media all and (min-width:768px) {
+    /* Tablet styles here */
+.bottom-section {
+	justify-content: center;
+	align-items: stretch;
+	flex-flow:row;
+}
+
+.section-one,
+.section-two,
+.section-three {
+	width: 33%;
+}
+
+.section-one {
+	margin: 0 0 0 15px;
+}
+ 
+}
+ 
+@media all and (min-width:1200px) {
+    /* Desktop styles here */
+header {
+	flex-flow: row wrap;
+	border:none;
+}
+
+header nav ul {
+	display:flex;
+	flex-flow:row wrap;
+}
+
+header h1 {
+	margin: 0;
+	padding: 0;
+}
+
+footer {
+	margin: 20px 0;
+	width: 100%;
+}
+
+.main-image {
+	height: auto;
+	width: 100%;
+}
 }
